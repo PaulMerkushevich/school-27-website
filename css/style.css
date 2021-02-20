@@ -45,15 +45,15 @@ body {
   -------------------------------------------------- */
   
   /* Center align the text within the three columns below the carousel */
-  .marketing .col-lg-4 {
+  .main-block .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  .marketing h2 {
+  .main-block h2 {
     font-weight: 400;
   }
   /* rtl:begin:ignore */
-  .marketing .col-lg-4 p {
+  .main-block .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
   }
@@ -65,6 +65,16 @@ body {
   
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  .featurette-divider-second{
+    margin: 2rem 0;
+    color: rgb(255, 246, 232);
+  }
+  .h1-teacher{
+    margin-bottom: 5rem;
+   
+    line-height: 1;
+    letter-spacing: -.05rem;
   }
   
   /* Thin out the marketing headings */
@@ -82,6 +92,7 @@ body {
     user-select: none;
   }
   
+
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
