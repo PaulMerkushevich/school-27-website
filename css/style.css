@@ -119,8 +119,8 @@ body {
       margin-bottom: 1.25rem;
       font-size: 1.25rem;
       line-height: 1.4;
-    }
-  
+     }
+     
     .featurette-heading {
       font-size: 50px;
     }
@@ -130,12 +130,30 @@ body {
     .featurette-heading {
       margin-top: 7rem;
     }
+   
   }
   
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
+    
+  }
+
+/*  @media(max-width: 1200px){
+    .images_carusel{
+      width: 40%;
+     }
   }
   
-
+ @media(max-width: 992px){
+    .images_carusel{
+      width: 40%;
+     }
+  }
+   @media(max-width: 767px){
+    .images_carusel{
+      width: 40%;
+     }
+  }*/
+  
