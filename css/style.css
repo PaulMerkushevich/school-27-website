@@ -72,6 +72,10 @@ body {
     margin: 2rem 0;
     color: rgb(255, 246, 232);
   }
+  .featurette-divider-second-l{
+    margin: 3rem 0;
+    color: rgb(255, 246, 232);
+  }
   .h1-teacher{
     margin-bottom: 5rem;
    
@@ -98,6 +102,12 @@ body {
     justify-content: center;
   }
   
+  table th{
+    padding-left: 3px; 
+  }
+  table td{
+    padding-left: 3px; 
+  }
 
   
   /* RESPONSIVE CSS
