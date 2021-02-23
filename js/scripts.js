@@ -1,5 +1,6 @@
 var ball = 0;
 var h2hV = document.getElementById('h2h');
+var userName;
 
 function show() {
 	
@@ -24,11 +25,23 @@ function show() {
 		document.getElementById('h2h').innerHTML = "Вы знаете всё про нашу школу!";
 		document.getElementById('h2h').style = "color:LightGreen";
 	}
+	document.getElementById('user-name').innerHTML = userName;
+	document.getElementById('user-balls').innerHTML = ball;
+	document.getElementById('table-res').style = "display: block;";
+
 }
 function Start() {
+	let userNameInput = document.getElementById('user-name-input');
+	if (userNameInput.value) {
+	userName = userNameInput.value;
 	document.getElementById("start_b").style = "display: none";
 	document.getElementById("q1").style = "display: flex";
 	document.getElementById("bodyID").style = "overflow-y: scroll";
+
+    }else{
+    	alert('Вы не ввели своё имя!');
+    }
+	
 }
 function Verify2(nd,qq) {
 	var radiosty;
@@ -42,6 +55,7 @@ function Verify2(nd,qq) {
 			alert('Правильный ответ!');
 			break;
 	}
+
 	document.getElementById("qb" + qq).removeAttribute("disabled");
 	document.getElementById("verno" + qq + "_s").style="color:LightGreen";
 	radiodis = document.getElementsByName("q" + qq);
