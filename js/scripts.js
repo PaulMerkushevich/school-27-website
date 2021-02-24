@@ -3,14 +3,14 @@ var h2hV = document.getElementById('h2h');
 var userName;
 
 function show() {
-	
-	if(ball === 1){
+
+	if (ball === 1) {
 		q_text = " вопрос";
-	}else if(ball > 1 && ball < 5){
+	} else if (ball > 1 && ball < 5) {
 		q_text = " вопросa";
-	}else if(ball > 5){
+	} else if (ball > 5) {
 		q_text = " вопросов";
-	}else if(ball === 0){
+	} else if (ball === 0) {
 		q_text = " вопросов";
 	}
 
@@ -33,17 +33,17 @@ function show() {
 function Start() {
 	let userNameInput = document.getElementById('user-name-input');
 	if (userNameInput.value) {
-	userName = userNameInput.value;
-	document.getElementById("start_b").style = "display: none";
-	document.getElementById("q1").style = "display: flex";
-	document.getElementById("bodyID").style = "overflow-y: scroll";
+		userName = userNameInput.value;
+		document.getElementById("start_b").style = "display: none";
+		document.getElementById("q1").style = "display: flex";
+		document.getElementById("bodyID").style = "overflow-y: scroll";
 
-    }else{
-    	alert('Вы не ввели своё имя!');
-    }
-	
+	} else {
+		alert('Вы не ввели своё имя!');
+	}
+
 }
-function Verify2(nd,qq) {
+function Verify2(nd, qq) {
 	var radiosty;
 	var radiodis;
 	switch (nd) {
@@ -57,7 +57,7 @@ function Verify2(nd,qq) {
 	}
 
 	document.getElementById("qb" + qq).removeAttribute("disabled");
-	document.getElementById("verno" + qq + "_s").style="color:LightGreen";
+	document.getElementById("verno" + qq + "_s").style = "color:LightGreen";
 	radiodis = document.getElementsByName("q" + qq);
 	radiosty = document.getElementsByClassName("q" + qq);
 	for (let i = 0; i < 4; i++) {
@@ -68,19 +68,19 @@ function Verify2(nd,qq) {
 }
 
 function Next(a) {
-	document.getElementById("q" + (a + 1)).style="display: flex";
+	document.getElementById("q" + (a + 1)).style = "display: flex";
 }
- function disableButton() {
- 	for (var i = 1; i <= 10; i++) {
- 		document.getElementById("qb"+i).disabled = "disabled";
- 	}
- }
+function disableButton() {
+	for (var i = 1; i <= 10; i++) {
+		document.getElementById("qb" + i).disabled = "disabled";
+	}
+}
 
- window.onload = disableButton;
+window.onload = disableButton;
 
- function addOtziv() {
- 	var otzCont = document.getElementById('otz-container');
- 	var textareaValue = document.getElementById('FormTextarea').value;
- 	otzCont.innerHTML += "<div class='col-lg-4 otziv'>"+textareaValue+"</div>";
- 	document.getElementById('FormTextarea').value = "";
- }
+function addOtziv() {
+	var otzCont = document.getElementById('otz-container');
+	var textareaValue = document.getElementById('FormTextarea').value;
+	otzCont.innerHTML += "<div class='col-lg-4 otziv'>" + textareaValue + "</div>";
+	document.getElementById('FormTextarea').value = "";
+}
