@@ -15,10 +15,10 @@ function show() {
 	}
 
 	document.getElementById('h4h').innerHTML = "Вы ответили на " + ball + q_text;
-	if (ball < 4) {
+	if (ball <= 4) {
 		document.getElementById('h2h').innerHTML = "Вам стоит получше узнать нашу школу!";
 		document.getElementById('h2h').style = "color:Crimson";
-	} else if (ball > 4 && ball < 8) {
+	} else if (ball > 4 && ball <= 8) {
 		document.getElementById('h2h').innerHTML = "Вы неплохо знаете нашу школу!";
 		document.getElementById('h2h').style = "color:orange";
 	} else if (ball > 8) {
@@ -81,7 +81,7 @@ window.onload = disableButton;
 function addOtziv() {
 	var otzCont = document.getElementById('otz-container');
 	var textareaValue = document.getElementById('FormTextarea').value;
-	otzCont.innerHTML += "<div class='col-lg-4 otziv'>" + textareaValue + "</div>";
+	otzCont.innerHTML += "<div class='col-lg-5 otziv'>" + textareaValue + "</div>";
 	alert('Ваш отзыв был добавлен!');
 	document.getElementById('FormTextarea').value = "";
 }
