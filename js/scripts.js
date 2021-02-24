@@ -77,3 +77,10 @@ function Next(a) {
  }
 
  window.onload = disableButton;
+
+ function addOtziv() {
+ 	var otzCont = document.getElementById('otz-container');
+ 	var textareaValue = document.getElementById('FormTextarea').value;
+ 	otzCont.innerHTML += "<div class='col-lg-4 otziv'>"+textareaValue+"</div>";
+ 	document.getElementById('FormTextarea').value = "";
+ }
