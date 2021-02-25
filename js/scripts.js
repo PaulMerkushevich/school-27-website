@@ -8,7 +8,7 @@ function show() {
 		q_text = " вопрос";
 	} else if (ball > 1 && ball < 5) {
 		q_text = " вопросa";
-	} else if (ball > 5) {
+	} else if (ball >= 5) {
 		q_text = " вопросов";
 	} else if (ball === 0) {
 		q_text = " вопросов";
